@@ -1,7 +1,6 @@
 package com.example.crud.domain.usuario;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
 
 public record RequestUsuario(
@@ -13,5 +12,6 @@ public record RequestUsuario(
         @NotBlank
         String email,
         @NotBlank
-        String password) {
+        String password
+) {
 }

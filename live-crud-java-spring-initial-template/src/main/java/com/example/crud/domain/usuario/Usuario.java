@@ -24,6 +24,13 @@ public class Usuario {
     private String password;
 
 
+    public Usuario(String name, String email, String password) {
+
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
     public Usuario(RequestUsuario requestUsuario) {
 
         this.name = requestUsuario.name();
